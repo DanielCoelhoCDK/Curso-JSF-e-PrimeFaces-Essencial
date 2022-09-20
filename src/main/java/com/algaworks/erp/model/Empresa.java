@@ -28,7 +28,7 @@ public class Empresa implements Serializable {
 	@Column(name = "nome_fantasia", nullable = false, length = 80)
 	private String nomeFantasia;
 	
-	@Column(name = "raza_social", nullable = false, length = 120)
+	@Column(name = "razao_social", nullable = false, length = 120)
 	private String razaoSocial;
 	
 	@Column(nullable = false, length = 18)
@@ -43,7 +43,7 @@ public class Empresa implements Serializable {
 	private RamoAtividade ramoAtividade;
 	
 	@Enumerated(EnumType.STRING)
-	@Column(nullable = false, length = 30)
+	@Column(name = "tipo_empresa",nullable = false, length = 30)
 	private TipoEmpresa tipo;
 	
 	public Long getId() {
