@@ -1,7 +1,7 @@
 package com.algaworks.erp.model;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -52,6 +52,14 @@ public class Empresa implements Serializable {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public TipoEmpresa getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoEmpresa tipo) {
+		this.tipo = tipo;
 	}
 
 	public String getNomeFantasia() {
